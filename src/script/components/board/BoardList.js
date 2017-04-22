@@ -11,11 +11,11 @@ class BoardList extends Component {
         <ul>
           <li>
             <img src="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2444256500.jpg" alt=""/>
-            <b>速度与激情</b>
+            <b>速度与</b>
           </li>
           <li>
             <img src="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2444256500.jpg" alt=""/>
-            <b>速度与激情</b>
+            <b>与激情</b>
           </li>
         </ul>
       </div>
