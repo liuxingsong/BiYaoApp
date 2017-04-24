@@ -1,0 +1,25 @@
+@charset "UTF-8";
+body{
+  width: 100%;
+  .nav{
+    height: .5rem;
+    @include border(0 0 .01rem 0,#999);
+    width: 200%;
+    @include flexbox();
+    @include flex-direction(row);
+    align-items: center;
+    li{
+      height: 95%;
+      line-height: .45rem;
+      font-size: .20rem;
+      width: .7rem;
+      margin: 0 .07rem;
+      text-align: center;
+      color: #999
+    }
+    .active{
+      color: #523669;
+      border-bottom: .01rem solid #523669;
+    }
+  }
+}

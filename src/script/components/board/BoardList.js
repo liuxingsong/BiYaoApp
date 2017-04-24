@@ -5,17 +5,47 @@ class BoardList extends Component {
     return (
       <div className="m-boardlist">
         <h1>
-          <b>正在上映的电影-北京</b>
-          <i className="yo-ico">&#xf07f;</i>
+          <b>品质男装</b> <i className="yo-ico">&#xf07f;</i>
         </h1>
+        <div className="topImg">
+          <img src="http://bfs.biyao.com/group1/M00/00/14/wKhkVVj4SX-ALVPmAACZNF2TAbI929.jpg" alt=""/>
+          <div className="makers">
+            <div>
+              <p>Hugo Boss PRADA</p>
+              <p>制造商出品</p>
+            </div>
+          </div>
+        </div>
         <ul>
           <li>
-            <img src="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2444256500.jpg" alt=""/>
-            <b>速度与</b>
+            <img src="https://img.biyao.com/files/temp/88/88bc9c980364f449.jpg"/>
+            <p className="title">简约商务休闲男鞋</p>
+            <p className="price">￥399</p>
           </li>
           <li>
-            <img src="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2444256500.jpg" alt=""/>
-            <b>与激情</b>
+            <img src="https://img.biyao.com/files/temp/88/88bc9c980364f449.jpg"/>
+            <p className="title">简约商务休闲男鞋</p>
+            <p className="price">￥399</p>
+          </li>
+          <li>
+            <img src="https://img.biyao.com/files/temp/88/88bc9c980364f449.jpg"/>
+            <p className="title">简约商务休闲男鞋</p>
+            <p className="price">￥399</p>
+          </li>
+          <li>
+            <img src="https://img.biyao.com/files/temp/88/88bc9c980364f449.jpg"/>
+            <p className="title">简约商务休闲男鞋</p>
+            <p className="price">￥399</p>
+          </li>
+          <li>
+            <img src="https://img.biyao.com/files/temp/88/88bc9c980364f449.jpg"/>
+            <p className="title">简约商务休闲男鞋</p>
+            <p className="price">￥399</p>
+          </li>
+          <li>
+            <img src="https://img.biyao.com/files/temp/88/88bc9c980364f449.jpg"/>
+            <p className="title">简约商务休闲男鞋</p>
+            <p className="price">￥399</p>
           </li>
         </ul>
       </div>

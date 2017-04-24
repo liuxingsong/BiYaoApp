@@ -14,15 +14,15 @@ $base-color: #00b38a;
 @import "../fragment/yo-header";
 
 @include yo-header(
-  $bgcolor: #35495e,
-  $color: #fff,
-  $font-size: .16rem,
-  $item-ico-color: #fff
+  $bgcolor: #fff,
+  $color: #46285E,
+  $font-size: .23rem,
+  $item-ico-color: #333333,
+  $height:.5rem
 ){
   font-weight: normal;
   .regret {
-    right: 0;
-    left: auto;
+    left: 0;
   }
 }
 
