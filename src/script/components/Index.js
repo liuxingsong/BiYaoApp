@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 
 import Banner from './board/Banner'
+import BoardHead from './board/BoardHead'
+
 import TabBar from './common/TabBar'
 import BoardList from './board/BoardList'
 
