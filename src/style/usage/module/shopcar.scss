@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+
+.yo-header{
+    width: 100%;
+    background: #fff;
+    height: .51rem;
+    @include border(0 0 1px 0, #d9d9d9);
+    h2{
+        font-size: .18rem;
+        color: #252525;
+    }
+    span.affirm{
+        font-size: .14rem;
+        font-weight: normal;
+        color: #383838;
+    }
+    
+}
+.m-shopcar{
+   
+    background: #f2f2f2;
+    @include flex();
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    .yo-scroller{
+        width: 100%;
+        height: 100%;
+    }
+    .m-brand{
+        background: #fff;
+        margin-top: .12rem;
+        font-size: .18rem;
+        .brandname{
+            width: 100%;
+            height: .44rem;
+            line-height: .44rem;
+            @include flexbox();
+            @include justify-content(space-between);
+            @include border(0 0 1px 0, #e6e6e6)
+            padding: 0 .1rem;
+            font-size: .14rem;
+            p{
+                color: #7f4395;
+                @include flexbox();
+                @include justify-content(space-around);
+                i{
+                  
+                    color: #7f4395;
+                    font-weight: normal;
+                    font-size: .17rem;
+                }
+                em{
+                    padding: 0 .12rem;
+                    font-size: .17rem;
+                    font-weight: normal;
+                }
+                b{
+                    padding-left: .12rem;
+                    font-weight: normal;
+                    font-size: .12rem;
+                    padding-top: .01rem;
+                }
+                
+            }
+            span{
+                font-size: .14rem;
+                color: #383838;
+            }
+        }
+        .carlist{
+            @include flex();
+            height: .95rem;
+    
+            background: #fff;
+            @include border(0 0 1px 0, #dcdcdc);
+            width: 100%;
+            padding: .12rem .11rem;
+            dl{
+                width: 100%;
+                height: 100%;
+                @include flexbox();
+                
+                dt{
+                    width: 1.1rem;
+
+                    i{
+                        color: #7f4395;
+                        padding-right: .12rem;
+                        font-size: .17rem;
+                        font-weight: normal;
+                    }
+                    img{
+                        width: .72rem;
+                        height: .72rem;
+                        border: 1px solid #dcdcdc;
+                   
+                    }
+                }
+                dd{
+                    
+                   @include flex();
+ 
+                    font-size: .12rem;
+       
+                   h3{
+                  
+                       color: #525252;
+//                     width: 2.33rem;
+                       overflow: hidden;
+                       white-space:nowrap;
+                       text-overflow: ellipsis;
+                       line-height: .28rem;
+                   }
+                   span{
+                       color: #838383;
+                       line-height: .28rem;
+                   }
+                   p{
+                       i{
+                           padding-right: .16rem;
+                           color: #ff5353;
+                       }
+                   }
+                   
+                }
+            }
+        }
+    }
+    
+        
+}
+.m-total{
+    width: 100%;
+    height: .50rem;
+    line-height: .50rem;
+    background: #fff;
+    padding: 0 .1rem;
+    @include border(1px 0 0 0, #dedede);
+    @include flexbox();
+    @include justify-content(space-between);
+    h3{
+        i{
+            color: #7f4395;
+            padding-right: .11rem;
+            font-size: .17rem;
+            font-weight: normal;
+        }
+        span{
+            font-size: .14rem;
+            color: #242424;
+            font-weight: normal;
+        }
+    }
+    p{
+        span{
+            padding-right: .15rem;
+            font-size: .12rem;
+            color: #262626;
+            b{
+                font-weight: normal;
+                color: #ff3333;
+            }
+        }
+        button{
+            margin-top: .08rem;
+            width: .79rem;
+            height: .34rem;
+            line-height: .34rem;
+            background: #ff3333;
+            color: #fff;
+            font-size: .14rem;
+            @include border-radius(.05rem);
+            border: none;
+            box-shadow: 1px 1px red;
+        }
+    }
+}
+   

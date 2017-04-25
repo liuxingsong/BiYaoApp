@@ -1,11 +1,13 @@
 .m-index {
+    width: 100%;
   height: 100%;
   @include flexbox();
   @include flex-direction(column);
 
-  .m-board {
-    overflow-y: scroll;
+  .m-details {
+//  overflow-y: scroll;
     @include flex();
     width: 100%;
   }
+  
 }
