@@ -1,17 +1,18 @@
 import React, {Component} from 'react'
 
-import Banner from './board/Banner'
-import BoardHead from './board/BoardHead'
-
+import Board from './board/Board'
 import TabBar from './common/TabBar'
-import BoardList from './board/BoardList'
+import Details from './details/Details'
+import Shopcar from './shopcar/Shopcar'
+
 
 class Index extends Component {
   render() {
     return (
       <div className="m-index">
+      
         {this.props.children}
-        <TabBar />
+				<TabBar />
       </div>
     )
   }
