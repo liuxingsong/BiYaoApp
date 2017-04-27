@@ -1,26 +1,26 @@
 @charset "UTF-8";
 @import "../fragment/yo-header";
-@include yo-header(
-  $bgcolor: #fff,
-  $color: #46285E,
-  $font-size: .23rem,
-  $item-ico-color: #333333,
-  $height:.5rem
-){
-  font-weight: normal;
-  .regret {
-    left: 0;
 
-  }
-}
 
 .m-board {
     width: 100%;
-    height: 100%;
+    height:100%;
+    overflow-y: scroll;
+    @include yo-header(
+      $bgcolor: #fff,
+      $color: #46285E,
+      $font-size: .23rem,
+      $item-ico-color: #333333,
+      $height:.5rem
+    ){
+      font-weight: normal;
+      .regret {
+        left: 0;
 
+      }
+    }
   .yo-scroller-a{
-    @include flexbox();
-    @include flexbox(column);
+
 
     .m-biyaosay{
       height: .48rem;

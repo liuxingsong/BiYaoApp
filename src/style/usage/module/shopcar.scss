@@ -1,28 +1,29 @@
 @charset "UTF-8";
+@import "../fragment/yo-header";
 
 
-.yo-header{
-    width: 100%;
-    background: #fff;
-    height: .51rem;
-    @include border(0 0 1px 0, #d9d9d9);
-    h2{
-        font-size: .18rem;
-        color: #252525;
-    }
-    span.affirm{
-        font-size: .14rem;
-        font-weight: normal;
-        color: #383838;
-    }
-
-}
 .m-shopcar{
     background: #f2f2f2;
     @include flex();
     width: 100%;
     overflow: hidden;
     height: 100%;
+    .yo-header{
+        width: 100%;
+        background: #fff;
+        height: .51rem;
+        @include border(0 0 1px 0, #d9d9d9);
+        h2{
+            font-size: .18rem;
+            color: #252525;
+        }
+        span.affirm{
+            font-size: .14rem;
+            font-weight: normal;
+            color: #383838;
+        }
+
+    }
     .yo-scroller{
         width: 100%;
         height: 100%;
