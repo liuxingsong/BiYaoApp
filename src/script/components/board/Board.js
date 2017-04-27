@@ -3,6 +3,7 @@ import Banner from './Banner'
 import BoardHead from './BoardHead'
 import BiYaoSay from './BiYaoSay'
 import DayNew from './DayNew'
+import BoardList from './BoardList'
 import Scroller from '../../../component_dev/scroller/src'
 
 class Board extends Component {
@@ -15,6 +16,7 @@ class Board extends Component {
             <Banner />
             <BiYaoSay />
             <DayNew />
+            <BoardList />
           </div>
         </Scroller>
       </div>
