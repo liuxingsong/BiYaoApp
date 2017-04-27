@@ -50,6 +50,7 @@ class BoardList extends Component {
         return response.json()
     })
     .then((res)=>{
+      console.log(res);
       for (let i = 0; i < res.goodsSort.length; i++) {
         this.setState({
           title: res.goodsSort[i].title,

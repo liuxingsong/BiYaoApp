@@ -10,23 +10,6 @@ $base-color: #00b38a;
   src: url('/iconfont/iconfont.woff') format('woff'),
   url('/iconfont/iconfont.ttf') format('truetype')
 }
-
-@import "../fragment/yo-header";
-
-@include yo-header(
-  $bgcolor: #fff,
-  $color: #46285E,
-  $font-size: .23rem,
-  $item-ico-color: #333333,
-  $height:.5rem
-){
-  font-weight: normal;
-  .regret {
-    left: 0;
-    
-  }
-}
-
 .m-tabbar {
   height: .5rem;
   background: #f5f5f5;

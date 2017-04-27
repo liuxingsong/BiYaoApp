@@ -2,10 +2,15 @@
   height: 100%;
   @include flexbox();
   @include flex-direction(column);
-
   .m-board {
-    overflow-y: scroll;
-    @include flex();
+    overflow-y:scroll;
     width: 100%;
+    height: 100%;
+    
+    .yo-scroller-a{
+      @include flexbox();
+      @include flex-direction(column);
+
+    }
   }
 }
