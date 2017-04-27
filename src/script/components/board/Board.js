@@ -9,21 +9,13 @@ class Board extends Component {
   render() {
     return (
       <div className="m-board">
-<<<<<<< HEAD
-        <BoardHead/>
-        <Scroller extraClass={'yo-scroller-a'} scrollX={false} scrollY={true}>
-=======
         <BoardHead />
         <Scroller extraClass='yo-scroller-a' scrollX={false} scrollY={true}>
->>>>>>> 09dd5a67ec763f54daa546cbe963379207d6c6fd
           <div>
             <Banner />
             <BiYaoSay />
             <DayNew />
-<<<<<<< HEAD
             <BoardList/>
-=======
->>>>>>> 09dd5a67ec763f54daa546cbe963379207d6c6fd
           </div>
         </Scroller>
       </div>
