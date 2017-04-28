@@ -14,7 +14,7 @@ ReactDOM.render((
      
      	<Route path="shopcar" component={Shopcar} />    	
     </Route>
-    <Route path="details/:id" component={Details} uri="/details" />
+    <Route path="details" component={Details} uri="/details" />
     
   </Router>
 ), document.getElementById('root'))
