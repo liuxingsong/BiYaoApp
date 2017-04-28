@@ -5,7 +5,7 @@
   @include flex-direction(column);
 
   .m-details {
-//  overflow-y: scroll;
+
     @include flex();
     width: 100%;
   }

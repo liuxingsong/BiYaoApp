@@ -14,55 +14,6 @@ $base-color: #00b38a;
     url('/iconfont/iconfont.ttf') format('truetype')
 }
 
-@font-face {
-  font-family: 'yofont';
-  src: url('/iconfont/iconfont-details.woff') format('woff'),
-  url('/iconfont/iconfont-details.ttf') format('truetype')
-}
-
-@import "../fragment/yo-header";
-@include yo-header( 
-    $bgcolor: #fff,
-    $color: #797979,
-    $font-size: .17rem,
-    $item-ico-color: #fff){
-    height: .5rem;   
-    line-height: .5rem;
-    font-weight: normal;
-    @include flexbox();
-    @include border(0 0 1px 0,#dbdbdb) 
-    .title {
-        
-        font-weight: 100;
-        @include flex();
-        
-        em {
-            display: inline-block;
-            width: .65rem;
-            height: 100%;
-            text-align: center;
-            @include border(0 0 2px 0, #fff);
-            &.cur{
-                 color: #7e4394;
-                 @include border(0 0 2px 0, #7e4394);
-            }
-        }
-       
-    }
-    .regret {
-        height: .5rem;   
-        line-height: .55rem;
-        padding-left: .1rem;
-        color: #797979!important;
-    }
-    .affirm{
-        color: #797979!important;
-        height: .5rem;   
-        font-size: .16rem;
-        font-weight: bolder;
-        padding-right: .12rem!important;
-    }
-}
 
 .m-tabbar {
   height: .55rem;

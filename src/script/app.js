@@ -11,10 +11,10 @@ import Shopcar from './components/shopcar/Shopcar'
 ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={Index}>
-      <IndexRedirect to="/Shopcar" />
+     
      	<Route path="shopcar" component={Shopcar} />    	
     </Route>
-    <Route path="details" component={Details} />
+    <Route path="details/:id" component={Details} uri="/details" />
     
   </Router>
 ), document.getElementById('root'))
