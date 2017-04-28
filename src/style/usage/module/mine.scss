@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+
+@font-face {
+  font-family: 'yofont';
+  src: url('/iconfont/iconfont-1.woff') format('woff'),
+  url('/iconfont/iconfont-1.ttf') format('truetype')
+}
+@font-face {
+  font-family: 'yofont';
+  src: url('/iconfont/iconfont-2.woff') format('woff'),
+  url('/iconfont/iconfont-2.ttf') format('truetype')
+}
+.m-mine{
+    @include flexbox();
+    @include flex-direction(column);
+    height: 100%;
+    .m-header{
+        height: 2.14rem;
+        background: #582d7c;
+        .top1{
+            @include flexbox();
+            height: .48rem; 
+            display:flex;  
+            align-items:center; 
+            span{
+                color: #fff;
+                font-size: .2rem;
+                margin-left: 90%;
+                }
+             }
+        .bottom1{
+            dl{
+              dt{
+                text-align: center;    
+                span{
+                    font-size:.8rem;
+                    color: #fff;
+                    display: block;
+                    margin-top: -.2rem;
+                    }
+                }
+              dd{
+                  @include flexbox();
+                  display:flex;   
+                  justify-content:center;
+                  .b1{
+                      font-size: .16rem;
+                      color: #fff; 
+                      margin-right: .1rem; 
+                    }
+                  span{                  
+                      width: .02rem;
+                      height: .2rem;
+                      background: #eb6100;
+                      display: block;
+                      }  
+                  .b2{
+                      font-size: .16rem;
+                      color: #fff;
+                      margin-left: .1rem;
+                     }
+                }   
+            }         
+        }     
+    } 
+    .m-section{
+        @include flex();
+        width: 100%;
+        .main{
+            width: 100%;
+            background: #fff;
+            .list{
+                margin: 0 auto;
+                width: 94%;
+                margin-top:.15rem;
+                height: .48rem;
+                display:flex;  
+                align-items:center; 
+                border-bottom: 1px solid #aaa;
+                @include flexbox();
+                b{
+                   font-size: .16rem;
+                 }
+                span{
+                   @include flex(); 
+                   font-size: .14rem;
+                   display: flex;
+                   flex-direction:row-reverse;
+                   margin-right: .1rem;
+                }
+                i{
+                  
+                   font-size: .16rem;
+                  } 
+                }
+            .nav{
+                height: .68rem;
+                margin: 0 auto;
+                width: 94%; 
+                @include flexbox();
+                > a {
+                      height: 100%;
+                      @include flex();
+                      @include flexbox();
+                      @include flex-direction(column);
+                      @include justify-content(center);
+                      text-align: center;
+                      font-size: .13rem;
+                      color: #000;
+                      i {
+                        font-size: .24rem;
+                        line-height: .24rem;
+                      }
+                      b {
+                        font-weight: normal;
+                      }
+                   }
+            }    
+        }
+        .wraf{
+            width: 100%;
+            margin-top: .15rem;
+            height: .99rem;
+            background: #fff;
+            .set{
+                width: 94%;
+                height: .48rem;
+                border-bottom: 1px solid #aaa;
+                margin: 0 auto;
+                display:flex;  
+                align-items:center; 
+                 b{
+                   font-size: .16rem;
+                 }
+                span{
+                   @include flex(); 
+                }
+                i{  
+                   font-size: .16rem;
+                  } 
+            }
+            .custom{
+                width: 94%;
+                height: .48rem;
+                margin: 0 auto;
+                display:flex;  
+                align-items:center; 
+                 b{
+                   font-size: .16rem;
+                 }
+                .cus1{
+                   font-size: .14rem;
+                   margin-left: .05rem;
+                }
+                .cus2{
+                    @include flex();
+                    font-size: .16rem;
+                    margin-right: .1rem;
+                    display: flex;
+                    flex-direction:row-reverse;
+                }
+                i{  
+                   font-size: .16rem;
+                  } 
+            }
+        }
+        .empty{
+                @include flexbox();
+                width: 100%; 
+                text-align: center;
+                
+            span{   
+                width: 100%;    
+                font-size: 12px;
+                display: block;
+                margin-top: 20%;     
+            }   
+        }   
+    }  
+}
