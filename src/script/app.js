@@ -17,7 +17,7 @@ ReactDOM.render((
     <Route path="/" component={Index}>
       <IndexRedirect to="/board" />
       <Route path="board" component={Board} />
-     	<Route path="shopcar" component={Shopcar} />
+      <Route path="shopcar" component={Shopcar} />
     </Route>
     <Route path="details" component={Details} />
 

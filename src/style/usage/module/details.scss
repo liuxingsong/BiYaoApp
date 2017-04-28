@@ -2,19 +2,71 @@
 
 @import "../component/carousel";
 
+@font-face {
+  font-family: 'yofont';
+  src: url('/iconfont/iconfont-details.woff') format('woff'),
+  url('/iconfont/iconfont-details.ttf') format('truetype')
+}
+
+@import "../fragment/yo-header";
 
 .m-details {
    width: 100%;
    height: 100%;
    @include flexbox();
    @include flex-direction(column);
+   
 
-   .yo-scroller-a{
-     @include flex();
-     section{
-         width: 100%!important;
-         height: 100%;
-
+    @include yo-header( 
+        $bgcolor: #fff,
+        $color: #797979,
+        $font-size: .17rem,
+        $item-ico-color: #fff){
+        height: .5rem;   
+        line-height: .5rem;
+        font-weight: normal;
+        @include flexbox();
+        @include border(0 0 1px 0,#dbdbdb) 
+        .title {
+            
+            font-weight: 100;
+            @include flex();
+            
+            em {
+                display: inline-block;
+                width: .65rem;
+                height: 100%;
+                text-align: center;
+                @include border(0 0 2px 0, #fff);
+                &.cur{
+                     color: #7e4394;
+                     @include border(0 0 2px 0, #7e4394);
+                }
+            }
+           
+        }
+        .regret {
+            height: .5rem;   
+            line-height: .55rem;
+            padding-left: .1rem;
+            color: #797979!important;
+        }
+        .affirm{
+            color: #797979!important;
+            height: .5rem;   
+            font-size: .16rem;
+            font-weight: bolder;
+            padding-right: .12rem!important;
+        }
+    }
+   
+   
+   
+   section{
+       width: 100%!important;
+       height: 100%;
+       @include flex();
+       overflow-y: scroll;
         .m-banner {
             height: 3.75rem;
             width: 100%;
@@ -34,22 +86,24 @@
             .yo-carousel-a {
                 height: 100%;
                 width: 100%;
-            ul.cont{
-                width: 100%;
-                      height: 100%;
-                li{
+//              position: relative;
+                ul.cont{
                     width: 100%;
-                      height: 100%;
-                    img {
-                      width: 100%;
-                      height: 100%;
+                          height: 100%;
+                    li{
+                        width: 100%;
+                          height: 100%;
+                        img {
+                          width: 100%;
+                          height: 100%;
+                        }
+                        
                     }
-
-                }
-              }
+                }      
+                
             }
-        }
-          .m-title{
+        }    
+        .m-title{
           width: 100%;
           height: 1.25rem;
           background: #fff;
@@ -62,14 +116,14 @@
               @include flexbox();
               justify-content: space-between;
               .left{
-
+    
                   h3{
                       height: .18rem;
                       line-height: .18rem;
                       font-size: .18rem;
                       color: #232323;
                   }
-
+                  
                   p{
                       height: .12rem;
                       font-size: .12rem;
@@ -104,76 +158,74 @@
                   color: #242424;
               }
           }
-        }
-        .m-serve{
-            width: 100%;
-            height: .44rem;
-            background: #fff;
-            padding: 0 .12rem;
-            margin-top: .13rem;
-            line-height: .44rem;
-            font-size: .12rem;
-            color: #7b7b7b;
-            @include flexbox();
-            justify-content: space-between;
-            >div{
-
-                span{
-                       padding-right: .15rem;
-                    i{
-                        color: #89529e;
-                        padding-right: .05rem;
-
-                    }
-
-                }
-            }
-            em{
-                font-size: .14rem;
-                color: #7e7e7e;
+      }
+      .m-serve{
+          width: 100%;
+          height: .44rem;
+          background: #fff;
+          padding: 0 .12rem;
+          margin-top: .13rem;
+          line-height: .44rem;
+          font-size: .12rem;
+          color: #7b7b7b;
+          @include flexbox();
+          justify-content: space-between;
+          >div{
+             
+              span{
+                     padding-right: .15rem;
+                  i{
+                      color: #89529e;
+                      padding-right: .05rem;
+                      
+                  }
+                  
               }
-
-
-        }
-        .m-select{
-            width: 100%;
-            height: .44rem;
-            background: #fff;
-            padding: 0 .12rem;
-            margin-top: .13rem;
-            line-height: .44rem;
-            @include flexbox();
-            justify-content: space-between;
-            h3{
+          }
+          em{
               font-size: .14rem;
-               color: #292929;
-
-
+              color: #7e7e7e;
             }
-
-        }
-        .m-rate{
-            width: 100%;
-            height: .44rem;
-            background: #fff;
-            padding: 0 .12rem;
-            margin-top: .13rem;
-            line-height: .44rem;
-            @include flexbox();
-            justify-content: space-between;
-            p{
-              font-size: .15rem;
-               color: #242424;
-
-               span{
-                   font-weight: normal;
-                   color: #969696;
-               }
-            }
-        }
+          
+          
+      }
+      .m-select{
+          width: 100%;
+          height: .44rem;
+          background: #fff;
+          padding: 0 .12rem;
+          margin-top: .13rem;
+          line-height: .44rem;
+          @include flexbox();
+          justify-content: space-between;
+          h3{
+            font-size: .14rem;
+             color: #292929;
+            
+             
+          }
+          
+      }
+      .m-rate{
+          width: 100%;
+          height: .44rem;
+          background: #fff;
+          padding: 0 .12rem;
+          margin-top: .13rem;
+          line-height: .44rem;
+          @include flexbox();
+          justify-content: space-between;
+          p{
+            font-size: .15rem;
+             color: #242424;
+          
+             span{
+                 font-weight: normal;
+                 color: #969696;
+             }
+          }   
+      }   
     }
-
-}
     .m-footer {
         height: .48rem;
         background: #fff;
@@ -204,22 +256,22 @@
                         &.carnum{
                             @include border(0 0 0 1px, #dadada);
                             position: relative;
-
+                            
                             .num{
                                 display: block;
                                 position: absolute;
-                                width: .13rem;
+                                min-width: .13rem;
                                 height: .13rem;
-                                line-height: .12rem;
+                                line-height: .13rem;
                                 font-size: .12rem;
                                 text-align: center;
                                 background: #ff3333;
                                 color: #fff;
-                                border-radius:50% ;
+                                border-radius: 50% ;
                                 top: 8%;
-                                right: 23%;
-                            }
-
+                                right: 23%;                                
+                                padding: .01rem;
+                            }                           
                         }
                         i{
                             display: block;
@@ -228,7 +280,7 @@
                             width: 100%;
                             color: #8a8a8a;
                             font-size: .20rem;
-                            height: .20rem;
+                            height: .20rem;                          
                         }
                         b{
                             display: block;
@@ -240,8 +292,7 @@
                             padding-top: .05rem;
                             color: #8a8a8a;
                             font-weight: normal;
-                        }
-
+                        }           
                     }
                 }
                 &.addcar {
@@ -256,8 +307,7 @@
                     color: #fff;
                     @include flex-direction(column);
                     @include justify-content(center);
-                }
-
+                } 
             }
         }
     }
