@@ -25,7 +25,6 @@ class Details extends Component {
 	    this.props.router.goBack()
   	}
  	
- 	
 	render() {
 	    return (
 	      <div className="m-details">

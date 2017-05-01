@@ -24,7 +24,7 @@ class Shopcar extends Component {
 			    	<Brand />
 			   		<Brand />
 			    	<Brand />
-					</section>
+				</section>
 		    	<Total />
 	    </div>
     )
