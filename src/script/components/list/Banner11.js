@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 
 import Scroller from '../../../component_dev/scroller/src';
-class Banner extends Component {
+class Banner11 extends Component {
   render() {
     return (
-      <div className="m-banner">
+      <div className="m-banner11">
       <Scroller
     scrollX={true}
     scrollY={false}
@@ -32,4 +32,4 @@ class Banner extends Component {
   }
 }
 
-export default Banner
+export default Banner11

@@ -3,7 +3,7 @@
   @include flexbox();
   @include flex-direction(column);
 
-  .m-board {
+  .m-board11 {
     overflow-y: scroll;
     @include flex();
     width: 100%;

@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 
-import Banner from './board/Banner'
+import Banner11 from './list/Banner11'
 import TabBar from './common/TabBar'
-import BoardList from './board/BoardList'
+import BoardList11 from './list/BoardList11'
 
 class Index extends Component {
   render() {

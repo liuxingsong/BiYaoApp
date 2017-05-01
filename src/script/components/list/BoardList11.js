@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 
 import Scroller from '../../../component_dev/scroller/src'
-class BoardList extends Component {
+class BoardList11 extends Component {
   render() {
     return (
     	   
@@ -117,4 +117,4 @@ class BoardList extends Component {
   }
 }
 
-export default BoardList
+export default BoardList11
