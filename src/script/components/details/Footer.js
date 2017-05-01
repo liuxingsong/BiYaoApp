@@ -14,8 +14,8 @@ class Footer extends Component {
           		<em className="num">3</em>
           	</span>
           </Link>
-          <Link to="" className="addcar">加入购物车</Link>
-          <Link to="" className="buynow">立即购买</Link>
+          <a className="addcar">加入购物车</a>
+          <a className="buynow">立即购买</a>
         </div>
       </div>
     )

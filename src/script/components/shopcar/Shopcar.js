@@ -7,16 +7,24 @@ import Scroller from "../../../component_dev/scroller/src"
 
 
 class Shopcar extends Component {
+	
+	constructor(props) {
+		super(props)
+		this.state ={
+			
+		}
+	}
+	
   render() {
     return (   
 	    <div className="m-shopcar">
 	    		<Head />
-		    		<section>
+	    		<section>
 			    	<Brand />
 			    	<Brand />
 			   		<Brand />
 			    	<Brand />
-						</section>
+					</section>
 		    	<Total />
 	    </div>
     )

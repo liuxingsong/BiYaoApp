@@ -25,6 +25,7 @@ module.exports = {
     proxy: {
       '/json': {
         target: 'http://localhost:7001',
+        changeOrigin: true,
         pathRewrite: {'^/json': ''}
       },
       '/nodejs': {

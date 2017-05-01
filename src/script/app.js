@@ -1,5 +1,3 @@
-//app.js 所有文件的入口文件
-
 require('../style/app.scss')
 import React from 'react'
 import ReactDOM from 'react-dom'
@@ -14,7 +12,7 @@ ReactDOM.render((
      
      	<Route path="shopcar" component={Shopcar} />    	
     </Route>
-    <Route path="details" component={Details} uri="/details" />
+    <Route path="details/:id" component={Details} uri="/details" />
     
   </Router>
 ), document.getElementById('root'))
